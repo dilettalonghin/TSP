@@ -1,0 +1,51 @@
+City;Country;Latitude;Longitude
+Vienna;Austria;48;16
+Brussels;Belgium;51;4
+Sarajevo;Bosnia and Herzegovina;44;18
+Sofia;Bulgaria;43;23
+Zagreb;Croatia;46;16
+Prague;Czech Republic;50;14
+Copenhagen;Denmark;56;13
+Tallinn;Estonia;59;25
+Helsinki;Finland;60;25
+Paris;France;49;2
+Lyon;France;46;5
+Bordeaux;France;45;-1
+Berlin;Germany;53;13
+Munich;Germany;48;12
+Hamburg;Germany;54;10
+Budapest;Hungary;47;19
+Reykjavik;Iceland;64;-22
+Dublin;Ireland;53;-6
+Rome;Italy;42;12
+Milan;Italy;45;9
+Venice;Italy;45;12
+Florence;Italy;44;12
+Riga;Latvia;57;24
+Vilnius;Lithuania;55;25
+Luxembourg;Luxembourg;50;6
+Amsterdam;Netherlands;52;5
+Rotterdam;Netherlands;52;4
+Oslo;Norway;60;11
+Warsaw;Poland;52;21
+Krakow;Poland;50;20
+Lisbon;Portugal;39;-9
+Porto;Portugal;41;-9
+Bucharest;Romania;44;26
+Bratislava;Slovakia;48;17
+Ljubljana;Slovenia;46;14
+Madrid;Spain;40;-4
+Barcelona;Spain;41;2
+Stockholm;Sweden;59;18
+Gothenburg;Sweden;58;12
+Zurich;Switzerland;47;9
+Geneva;Switzerland;46;6
+Kyiv;Ukraine;50;31
+Odessa;Ukraine;46;31
+London;United Kingdom;52;0
+Athens;Greece;38;24
+Skopje;North Macedonia;42;21
+Tirana;Albania;41;20
+Podgorica;Montenegro;42;19
+Belgrade;Serbia;45;20
+Chisinau;Moldova;47;29

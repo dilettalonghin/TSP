@@ -1,0 +1,59 @@
+XY.CSV
+  - Our xy.csv file has ';' as the delimiter, so if you want to run our code with another dataset (where the xy.csv file uses ',' as the delimiter), you will need to change this line:
+    coordinates = pd.read_csv('xy.csv', delimiter=';')
+    to
+    coordinates = pd.read_csv('xy.csv', delimiter=',')
+    Location of that line:
+      - SINGLE: Line 245
+      - MULTI: Line 232  
+
+
+SINGLE-OBJECTIVE
+
+  - RUN the Single-Optimization by running the following command: python .\SINGLE.py 
+  - Input Parameters:
+      - Number of cities (10, 30, 50)
+      - Evaluate by cost or time (cost, time)
+      - Choose transport (bus, train, plane, all)
+      - Number of runs [1; 30]
+      - Use heuritic (yes, no)
+  - Prints in the terminal:
+      - Mean of the best time/cost (depending on the evaluated parameter cost/time)
+      - STD of the best tims/cost (also depending on the evaluated parameter cost/time)
+      NOTE: If the number of the runs is 1 it will also print the STD ('nan'), and it will also give a warning based on that.
+  - Plots: 
+      - If the number of runs is 1, it will plot the best path for that run and the respective convergence curve.
+      - If the number of runs is more than 1, it will plot only the convergence curve of the best run (but it will not plot the best path). 
+      
+
+MULTI-OBJECTIVE
+
+  - RUN the Multi-Objective by running the following command: python .\MULTI.py
+  - Input Parameters:
+      - Number of cities (10, 30, 50)
+      - Use heuritic (yes, no)
+  - Prints in the terminal:
+      - For the Min Cost it will print the cost and the time
+      - For the Min Time it will print the cost and the time
+  -Plots:
+      - Pareto Curve
+      - Best time for Min Cost
+      - Best cost for Min Time
+      - Pareto Curve with the Hypervolume Evolution Curve
+
+
+ADDITIONAL INFORMATION (Additional files)
+
+  DATASET
+  - Command used for the creation of matrix_distances.csv: python .\calculate_dist.py
+  - Command used for the creation of the 6 .csv files: python .\calculate_time_price.py
+  - Command used to plot the selected cities in a planar map: python .\plot_map.py
+
+  CONVERGENCE CURVES (SINGLE-OPTIMIZATION)
+  - Our code only runs 30 times for one type of transport (or all), so it only produces 1 convergence curve at a time.
+  - In order to generate only 2 plots (each one with 4 covergence curves) we used the last 4 lines of the code in SINGLE.py
+    (which are commented), to save the convergence curve of all the transports in a .json file
+  - With all the .json files generated, we ran the command "python .\plot_convergence_curves.py" and
+    "python .\plot_heuristic_convergence_curves.py" for creating the plots with heuristic and no heuristic respectively.
+
+
